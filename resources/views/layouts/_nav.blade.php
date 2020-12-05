@@ -45,6 +45,9 @@
                             <a class="dropdown-item" href="{{ url('claims') }}">
                                 Claims
                             </a>
+                            <a class="dropdown-item" href="{{ url('reports') }}">
+                                My Reports
+                            </a>
                             <a class="dropdown-item" href="{{ url('designs') }}">
                                 Design Approvals
                             </a>
@@ -77,6 +80,10 @@
                         <a class="dropdown-item" href="{{ url('raffles') }}">
                             Raffles
                         </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="{{ url('reports/bug-reports') }}">
+                            Bug Reports
+                        </a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -88,13 +95,16 @@
                         <a class="dropdown-item" href="{{ url('world') }}">
                             Encyclopedia
                         </a>
-                        <a class="dropdown-item" href="{{ url('world/prompts') }}">
+                        <a class="dropdown-item" href="{{ url('prompts/prompts') }}">
                             Prompts
                         </a>
                         <a class="dropdown-item" href="{{ url('shops') }}">
                             Shops
                         </a>
                     </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('sales') }}">Sales</a>
                 </li>
             </ul>
 
@@ -133,6 +143,9 @@
                             </a>
                             <a class="dropdown-item" href="{{ url('claims/new') }}">
                                 Submit Claim
+                            </a>
+                            <a class="dropdown-item" href="{{ url('reports/new') }}">
+                                Submit Report
                             </a>
                         </div>
                     </li>
